@@ -1,0 +1,23 @@
+inherit kf5
+
+NAME="kf5-kdgantt2"
+VERSION=16.08.3
+RELEASE=1
+CATEGORY="Libs"
+SUMMARY="KDE Gantt library"
+DESCRIPTION="This is an easy to use, complete gantt chart widget for Qt."
+
+PKG_NAMES="libKF5KDGantt2_5 libKF5KDGantt2-devel"
+libKF5KDGantt2_5_CONTENTS="
+	etc/xdg/kdgantt2.categories
+	usr/bin/cygKF5KDGantt2-5.dll
+	usr/share/doc/${NAME}
+"
+libKF5KDGantt2_devel_REQUIRES="libQt5Core-devel libQt5Gui-devel"
+libKF5KDGantt2_devel_CONTENTS="
+	usr/include/KF5/KDGantt2/
+	usr/include/KF5/kdgantt2_version.h
+	usr/lib/cmake/KF5KDGantt2/
+	usr/lib/libKF5KDGantt2.dll.a
+	usr/lib/qt5/mkspecs/modules/qt_KDGantt2.pri
+"
